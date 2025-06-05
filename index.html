@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JR Transport Solutions</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -17,7 +20,13 @@
             background-color: #4a4a4a; /* dark grey */
             color: #ffc107; /* yellow */
             padding: 1em 0;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+        }
+        header img.logo {
+            height: 150px;
         }
         nav {
             background: #ff8c00; /* orange */
@@ -87,12 +96,32 @@
         .service-details {
             margin-top: 2em;
         }
+        .contact-box {
+            background-color: #fffbf2;
+            border: 2px solid #ff8c00;
+            padding: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 2em;
+        }
+        .contact-box p {
+            font-size: 1.1em;
+            margin: 0.5em 0;
+        }
+        .contact-box strong {
+            display: inline-block;
+            width: 140px;
+            color: #4a4a4a;
+        }
     </style>
 </head>
 <body>
 <header>
-    <h1>JR Electrical Solutions</h1>
-    <p>Professional Electrical, Construction & Mechanical Services</p>
+    <img src="logo.jpg" alt="JR Logo" class="logo" />
+    <div>
+        <h1>Spectrum</h1>
+        <p>Professional Electrical, Construction & Mechanical Services</p>
+    </div>
 </header>
 
 <nav>
@@ -118,7 +147,6 @@
             <a href="#clearview">Clear View Fencing</a>
         </div>
     </section>
-
 
     <section id="gallery">
         <h2>Project Gallery</h2>
@@ -173,13 +201,20 @@
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <p><strong>Contact Person:</strong> Mr Forbes</p>
-        <p><strong>Phone:</strong> 084 021 2477 / 063 921 6255</p>
+        <div class="contact-box">
+
+                <p><strong>Contact Person:</strong> Mr Forbes</p>
+                <p><strong>Phone:</strong> 084 021 2477 / 063 921 6255</p>
+                <p><strong>Email:</strong> Specmechelectrical@gmail.com</p>
+                <p><strong>Working hours:</strong> 7am - 6pm Monday to Sunday</p>
+                <p><strong>Shutdowns:</strong> 24 hours</p>
+                <p><strong>Address:</strong> 590 greenstone crest Stoneridge drive greenstone hill</p>
+        </div>
     </section>
 </div>
 
 <footer>
-    <p>&copy; 2025 JR Transport Solutions. All rights reserved.</p>
+    <p>&copy;2025 Spectrum. All rights reserved.</p>
 </footer>
 </body>
 </html>
