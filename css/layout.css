@@ -339,9 +339,9 @@ a {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center 40%;
+  object-position: center center;
 }
 
 .hero__caption {
@@ -365,8 +365,8 @@ a {
   }
 
   .hero__showcase img {
-    aspect-ratio: 4 / 3;
-    max-height: 20rem;
+    aspect-ratio: 3 / 4;
+    max-height: 24rem;
   }
 }
 
@@ -381,9 +381,9 @@ a {
   }
 
   .hero__showcase img {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 3 / 4;
     max-height: none;
-    min-height: 18rem;
+    min-height: 20rem;
   }
 }
 
@@ -393,7 +393,7 @@ a {
   }
 
   .hero__showcase img {
-    min-height: 22rem;
+    min-height: 24rem;
   }
 }
 
@@ -409,7 +409,7 @@ a {
 
 @media (max-width: 374px) {
   .hero__showcase img {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 5;
   }
 
   .hero__caption {
