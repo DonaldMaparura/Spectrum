@@ -1,220 +1,460 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JR Transport Solutions</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #4a4a4a; /* dark grey */
-            color: #ffc107; /* yellow */
-            padding: 1em 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1em;
-        }
-        header img.logo {
-            height: 150px;
-        }
-        nav {
-            background: #ff8c00; /* orange */
-            text-align: center;
-            padding: 0.5em 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1em;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 1em;
-            background-color: white;
-        }
-        h2 {
-            color: #ff8c00; /* orange */
-        }
-        h3 {
-            color: #4a4a4a; /* dark grey */
-            margin-top: 1em;
-        }
-        footer {
-            background: #4a4a4a; /* dark grey */
-            color: #ffc107; /* yellow */
-            text-align: center;
-            padding: 1em 0;
-            margin-top: 2em;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 1em;
-        }
-        @media (min-width: 600px) {
-            .gallery {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            max-height: 320px;
-            object-fit: cover;
-            border-radius: 5px;
-            border: 2px solid #ff8c00; /* orange */
-        }
-        .service-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1em;
-            margin-top: 1em;
-        }
-        .service-list a {
-            background-color: #ff8c00;
-            color: white;
-            padding: 0.75em 1em;
-            border-radius: 8px;
-            text-decoration: none;
-            flex: 1 1 calc(33% - 1em);
-            text-align: center;
-            font-weight: bold;
-        }
-        .service-details {
-            margin-top: 2em;
-        }
-        .contact-box {
-            background-color: #fffbf2;
-            border: 2px solid #ff8c00;
-            padding: 1.5em;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin-top: 2em;
-        }
-        .contact-box p {
-            font-size: 1.1em;
-            margin: 0.5em 0;
-        }
-        .contact-box strong {
-            display: inline-block;
-            width: 140px;
-            color: #4a4a4a;
-        }
-    </style>
+    <title>Spectrum | Electrical, Construction & Mechanical Services in Johannesburg</title>
+    <meta name="description" content="Spectrum provides professional electrical installations, COC certificates, renovations, solar, construction, fencing, and mechanical repairs across Johannesburg. Available 7 days a week." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://donaldmaparura.github.io/Spectrum/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Spectrum | Professional Electrical & Construction Services" />
+    <meta property="og:description" content="Trusted electrical, construction, and mechanical services in Johannesburg. COCs, solar, renovations, and 24-hour shutdown support." />
+    <meta property="og:image" content="logo.jpg" />
+    <meta property="og:locale" content="en_ZA" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Spectrum | Professional Electrical & Construction Services" />
+    <meta name="twitter:description" content="Trusted electrical, construction, and mechanical services in Johannesburg." />
+
+    <link rel="icon" href="images/logo.webp" type="image/webp" />
+    <link rel="preload" href="css/main.css" as="style" />
+    <link rel="preload" href="images/logo.webp" as="image" type="image/webp" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Spectrum",
+      "description": "Professional electrical, construction, and mechanical services in Johannesburg.",
+      "telephone": "+27840212477",
+      "email": "Specmechelectrical@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "590 Greenstone Crest, Stoneridge Drive, Greenstone Hill",
+        "addressLocality": "Johannesburg",
+        "addressCountry": "ZA"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "07:00",
+        "closes": "18:00"
+      },
+      "areaServed": "Johannesburg",
+      "image": "logo.jpg"
+    }
+    </script>
 </head>
 <body>
-<header>
-    <img src="logo.jpg" alt="JR Logo" class="logo" />
-    <div>
-        <h1>Spectrum</h1>
-        <p>Professional Electrical, Construction & Mechanical Services</p>
-    </div>
-</header>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<nav>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="site-brand" href="#top">
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp" />
+                    <img src="logo.jpg" alt="" class="site-brand__logo" width="56" height="56" fetchpriority="high" decoding="async" />
+                </picture>
+                <div class="site-brand__text">
+                    <p class="site-brand__name">Spectrum</p>
+                    <p class="site-brand__tagline">Electrical · Construction · Mechanical</p>
+                </div>
+            </a>
 
-<div class="container">
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-list">
-            <a href="#electrical">Electrical Installations</a>
-            <a href="#coc">Certificate of Compliance</a>
-            <a href="#renovations">House Renovations</a>
-            <a href="#floor">Tiling, Plumbing, Painting & Paving</a>
-            <a href="#solar">Solar Installations</a>
-            <a href="#construction">Construction</a>
-            <a href="#fencing">Electric Fencing & Gates</a>
-            <a href="#mechanical">Mechanical Repairs</a>
-            <a href="#shutdowns">Shutdown Assistance</a>
-            <a href="#rubble">Rubble Removal</a>
-            <a href="#clearview">Clear View Fencing</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">
+                <span class="nav-toggle__bar" aria-hidden="true"></span>
+            </button>
+
+            <nav id="site-nav" class="site-nav" aria-label="Primary">
+                <a class="site-nav__link" href="#services">Services</a>
+                <a class="site-nav__link" href="#gallery">Gallery</a>
+                <a class="site-nav__link" href="#about">About</a>
+                <a class="site-nav__link" href="#contact">Contact</a>
+                <div class="site-nav__cta">
+                    <a class="btn btn--primary" href="tel:+27840212477">Call Now</a>
+                </div>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <section id="gallery">
-        <h2>Project Gallery</h2>
-        <p>Below are some images from our recent projects:</p>
-        <div class="gallery">
-            <img src="IMG-20250604-WA0046.jpg" alt="Electrical Work" />
-            <img src="IMG-20250604-WA0048.jpg" alt="Construction" />
-            <img src="IMG-20250604-WA0049.jpg" alt="Fencing Work" />
-            <img src="IMG-20250604-WA0050.jpg" alt="Floor Tiling" />
-            <img src="IMG-20250604-WA0052.jpg" alt="Floor Tiling" />
-            <img src="IMG-20250604-WA0051.jpg" alt="Floor Tiling" />
-            <img src="IMG-20250604-WA0053.jpg" alt="Floor Tiling" />
-            <img src="IMG-20250604-WA0054.jpg" alt="Floor Tiling" />
-            <img src="IMG-20250604-WA0055.jpg" alt="Floor Tiling" />
+    <main id="main-content">
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <p class="eyebrow">Johannesburg &amp; surrounds</p>
+                    <h1 class="hero__title" id="hero-title">Professional services you can trust, delivered on time</h1>
+                    <p class="hero__description">
+                        From electrical installations and COC certificates to full renovations, solar, and industrial mechanical repairs — Spectrum keeps your home and business running safely.
+                    </p>
+                    <div class="btn-group">
+                        <a class="btn btn--primary btn--lg" href="tel:+27840212477">Call 084 021 2477</a>
+                        <a class="btn btn--whatsapp btn--lg" href="https://wa.me/27840212477?text=Hi%20Spectrum%2C%20I%27d%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            WhatsApp
+                        </a>
+                        <a class="btn btn--secondary btn--lg" href="#contact">Get a quote</a>
+                    </div>
+                </div>
+                <aside class="hero__stats" aria-label="Company highlights">
+                    <div class="stat">
+                        <span class="stat__value">11+</span>
+                        <span class="stat__label">Specialist services</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__value">7 days</span>
+                        <span class="stat__label">Weekly availability</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__value">24 hr</span>
+                        <span class="stat__label">Shutdown support</span>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section" id="services" aria-labelledby="services-title">
+            <div class="container">
+                <header class="section__header section__header--center">
+                    <p class="eyebrow">What we do</p>
+                    <h2 class="section-title" id="services-title">Our Services</h2>
+                    <p class="section-subtitle">Comprehensive solutions for residential, commercial, and industrial clients across electrical, construction, and mechanical needs.</p>
+                </header>
+
+                <div class="services-grid">
+                    <a class="service-card card card--interactive" href="#electrical">
+                        <div class="card__body">
+                            <div class="card__icon" aria-hidden="true">⚡</div>
+                            <h3 class="card__title">Electrical Installations</h3>
+                            <p class="card__text">Domestic and industrial wiring, panel upgrades, and compliant installations.</p>
+                            <span class="card__link">Learn more →</span>
+                        </div>
+                    </a>
+                    <a class="service-card card card--interactive" href="#coc">
+                        <div class="card__body">
+                            <div class="card__icon" aria-hidden="true">✓</div>
+                            <h3 class="card__title">Certificate of Compliance</h3>
+                            <p class="card__text">COCs for property sales and leases, meeting South African safety standards.</p>
+                            <span class="card__link">Learn more →</span>
+                        </div>
+                    </a>
+                    <a class="service-card card card--interactive" href="#renovations">
+                        <div class="card__body">
+                            <div class="card__icon" aria-hidden="true">🏠</div>
+                            <h3 class="card__title">House Renovations</h3>
+                            <p class="card__text">Layout redesign through to finishing touches with quality craftsmanship.</p>
+                            <span class="card__link">Learn more →</span>
+                        </div>
+                    </a>
+                    <a class="service-card card card--interactive" href="#floor">
+                        <div class="card__body">
+                            <div class="card__icon" aria-hidden="true">🔧</div>
+                            <h3 class="card__title">Tiling, Plumbing &amp; Painting</h3>
+                            <p class="card__text">Tiling, plumbing repairs, painting, and durable paving solutions.</p>
+                            <span class="card__link">Learn more →</span>
+                        </div>
+                    </a>
+                    <a class="service-card card card--interactive" href="#solar">
+                        <div class="card__body">
+                            <div class="card__icon" aria-hidden="true">☀</div>
+                            <h3 class="card__title">Solar Installations</h3>
+                            <p class="card__text">System design, installation, and maintenance for homes and businesses.</p>
+                            <span class="card__link">Learn more →</span>
+                        </div>
+                    </a>
+                    <a class="service-card card card--interactive" href="#construction">
+                        <div class="card__body">
+                            <div class="card__icon" aria-hidden="true">🏗</div>
+                            <h3 class="card__title">Construction</h3>
+                            <p class="card__text">Foundations to roofing — projects delivered on time and on budget.</p>
+                            <span class="card__link">Learn more →</span>
+                        </div>
+                    </a>
+                    <a class="service-card card card--interactive" href="#fencing">
+                        <div class="card__body">
+                            <div class="card__icon" aria-hidden="true">🔒</div>
+                            <h3 class="card__title">Electric Fencing &amp; Gates</h3>
+                            <p class="card__text">Installation, maintenance, and repair of perimeter security systems.</p>
+                            <span class="card__link">Learn more →</span>
+                        </div>
+                    </a>
+                    <a class="service-card card card--interactive" href="#mechanical">
+                        <div class="card__body">
+                            <div class="card__icon" aria-hidden="true">⚙</div>
+                            <h3 class="card__title">Mechanical Repairs</h3>
+                            <p class="card__text">FMCG industry machinery repairs with minimal downtime.</p>
+                            <span class="card__link">Learn more →</span>
+                        </div>
+                    </a>
+                    <a class="service-card card card--interactive" href="#shutdowns">
+                        <div class="card__body">
+                            <div class="card__icon" aria-hidden="true">🕐</div>
+                            <h3 class="card__title">Shutdown Assistance</h3>
+                            <p class="card__text">Skilled labour and technical support for planned industrial shutdowns.</p>
+                            <span class="card__link">Learn more →</span>
+                        </div>
+                    </a>
+                    <a class="service-card card card--interactive" href="#rubble">
+                        <div class="card__body">
+                            <div class="card__icon" aria-hidden="true">🚛</div>
+                            <h3 class="card__title">Rubble Removal</h3>
+                            <p class="card__text">Post-renovation and construction debris removal to keep sites safe.</p>
+                            <span class="card__link">Learn more →</span>
+                        </div>
+                    </a>
+                    <a class="service-card card card--interactive" href="#clearview">
+                        <div class="card__body">
+                            <div class="card__icon" aria-hidden="true">🛡</div>
+                            <h3 class="card__title">Clear View Fencing</h3>
+                            <p class="card__text">Maximum visibility and security for residential and commercial properties.</p>
+                            <span class="card__link">Learn more →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--muted" id="gallery" aria-labelledby="gallery-title">
+            <div class="container">
+                <header class="section__header section__header--center">
+                    <p class="eyebrow">Our work</p>
+                    <h2 class="section-title" id="gallery-title">Project Gallery</h2>
+                    <p class="section-subtitle">Recent projects across electrical, construction, fencing, and flooring work.</p>
+                </header>
+
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <picture>
+                            <source srcset="images/IMG-20250604-WA0046.webp" type="image/webp" />
+                            <img src="IMG-20250604-WA0046.jpg" alt="Electrical installation work on a commercial panel" width="576" height="1280" loading="lazy" decoding="async" />
+                        </picture>
+                    </figure>
+                    <figure class="gallery-item">
+                        <picture>
+                            <source srcset="images/IMG-20250604-WA0048.webp" type="image/webp" />
+                            <img src="IMG-20250604-WA0048.jpg" alt="Construction project in progress" width="576" height="1280" loading="lazy" decoding="async" />
+                        </picture>
+                    </figure>
+                    <figure class="gallery-item">
+                        <picture>
+                            <source srcset="images/IMG-20250604-WA0049.webp" type="image/webp" />
+                            <img src="IMG-20250604-WA0049.jpg" alt="Electric fencing installation on a property perimeter" width="576" height="1280" loading="lazy" decoding="async" />
+                        </picture>
+                    </figure>
+                    <figure class="gallery-item">
+                        <picture>
+                            <source srcset="images/IMG-20250604-WA0050.webp" type="image/webp" />
+                            <img src="IMG-20250604-WA0050.jpg" alt="Floor tiling work in a residential space" width="576" height="1280" loading="lazy" decoding="async" />
+                        </picture>
+                    </figure>
+                    <figure class="gallery-item">
+                        <picture>
+                            <source srcset="images/IMG-20250604-WA0052.webp" type="image/webp" />
+                            <img src="IMG-20250604-WA0052.jpg" alt="Completed floor tiling with clean grout lines" width="576" height="1280" loading="lazy" decoding="async" />
+                        </picture>
+                    </figure>
+                    <figure class="gallery-item">
+                        <picture>
+                            <source srcset="images/IMG-20250604-WA0051.webp" type="image/webp" />
+                            <img src="IMG-20250604-WA0051.jpg" alt="Tiling detail showing precision finish" width="576" height="1280" loading="lazy" decoding="async" />
+                        </picture>
+                    </figure>
+                    <figure class="gallery-item">
+                        <picture>
+                            <source srcset="images/IMG-20250604-WA0053.webp" type="image/webp" />
+                            <img src="IMG-20250604-WA0053.jpg" alt="Large-format floor tiles being installed" width="576" height="1280" loading="lazy" decoding="async" />
+                        </picture>
+                    </figure>
+                    <figure class="gallery-item">
+                        <picture>
+                            <source srcset="images/IMG-20250604-WA0054.webp" type="image/webp" />
+                            <img src="IMG-20250604-WA0054.jpg" alt="Tiled floor area with modern finish" width="576" height="1280" loading="lazy" decoding="async" />
+                        </picture>
+                    </figure>
+                    <figure class="gallery-item">
+                        <picture>
+                            <source srcset="images/IMG-20250604-WA0055.webp" type="image/webp" />
+                            <img src="IMG-20250604-WA0055.jpg" alt="Completed tiling project in a living area" width="576" height="1280" loading="lazy" decoding="async" />
+                        </picture>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <header class="section__header">
+                    <p class="eyebrow">Service details</p>
+                    <h2 class="section-title" id="about-title">What to expect from Spectrum</h2>
+                    <p class="section-subtitle">Every service is delivered with safety, compliance, and clear communication from quote to completion.</p>
+                </header>
+
+                <div class="details-grid">
+                    <article class="detail-card" id="electrical">
+                        <h3 class="detail-card__title">Electrical Installations (Domestic &amp; Industrial)</h3>
+                        <p class="detail-card__text">We provide expert electrical installations for homes and industrial facilities. From new wiring to panel upgrades, our certified electricians ensure your systems are safe, efficient, and compliant.</p>
+                    </article>
+                    <article class="detail-card" id="coc">
+                        <h3 class="detail-card__title">Certificate of Compliance (COCs)</h3>
+                        <p class="detail-card__text">Need to sell or lease your property? We issue COCs for electrical work, ensuring your property meets the South African National Standards for safety and legal compliance.</p>
+                    </article>
+                    <article class="detail-card" id="renovations">
+                        <h3 class="detail-card__title">House Renovations</h3>
+                        <p class="detail-card__text">Transform your living space with our renovation services. We handle everything from layout redesign to finishing touches with quality craftsmanship and attention to detail.</p>
+                    </article>
+                    <article class="detail-card" id="floor">
+                        <h3 class="detail-card__title">Floor Tiling, Plumbing, Painting &amp; Paving</h3>
+                        <p class="detail-card__text">We enhance the appearance and functionality of your home with expert tiling, plumbing repairs, painting services, and durable paving solutions for driveways and outdoor areas.</p>
+                    </article>
+                    <article class="detail-card" id="solar">
+                        <h3 class="detail-card__title">Solar Installations</h3>
+                        <p class="detail-card__text">Power your home or business sustainably with our reliable solar panel installations. We offer full solutions including system design, installation, and maintenance.</p>
+                    </article>
+                    <article class="detail-card" id="construction">
+                        <h3 class="detail-card__title">Construction Services</h3>
+                        <p class="detail-card__text">From foundations to roofing, we manage construction projects of all sizes. Our team delivers high-quality, cost-effective construction solutions on time and on budget.</p>
+                    </article>
+                    <article class="detail-card" id="fencing">
+                        <h3 class="detail-card__title">Electric Fencing &amp; Automatic Gates</h3>
+                        <p class="detail-card__text">Secure your property with state-of-the-art electric fencing and automated gate systems. We install, maintain, and repair all types of perimeter security solutions.</p>
+                    </article>
+                    <article class="detail-card" id="mechanical">
+                        <h3 class="detail-card__title">Mechanical Repairs (FMCG Industries)</h3>
+                        <p class="detail-card__text">We specialize in mechanical repairs for the Fast-Moving Consumer Goods industry, ensuring your machinery stays operational and efficient with minimal downtime.</p>
+                    </article>
+                    <article class="detail-card" id="shutdowns">
+                        <h3 class="detail-card__title">Assistance with Shutdowns</h3>
+                        <p class="detail-card__text">Our team supports planned industrial shutdowns, providing skilled labor and technical services to ensure your operations resume quickly and safely.</p>
+                    </article>
+                    <article class="detail-card" id="rubble">
+                        <h3 class="detail-card__title">Rubble Removal</h3>
+                        <p class="detail-card__text">Keep your site clean and safe with our rubble and debris removal services. Perfect for post-renovation, construction, and yard clean-up needs.</p>
+                    </article>
+                    <article class="detail-card" id="clearview">
+                        <h3 class="detail-card__title">Clear View Fence Installations</h3>
+                        <p class="detail-card__text">We install clear view fences for maximum visibility and security, ideal for residential, commercial, and industrial properties.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--muted" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <header class="section__header section__header--center">
+                    <p class="eyebrow">Get in touch</p>
+                    <h2 class="section-title" id="contact-title">Contact Us</h2>
+                    <p class="section-subtitle">Reach out for a quote, COC inspection, or emergency shutdown support. We respond promptly during business hours.</p>
+                </header>
+
+                <div class="contact-grid">
+                    <div class="contact-panel contact-panel--highlight">
+                        <h3 class="card__title">Contact details</h3>
+                        <ul class="info-list">
+                            <li class="info-list__item">
+                                <span class="info-list__label">Contact person</span>
+                                <p class="info-list__value">Mr Forbes</p>
+                            </li>
+                            <li class="info-list__item">
+                                <span class="info-list__label">Phone</span>
+                                <p class="info-list__value">
+                                    <a href="tel:+27840212477">084 021 2477</a> /
+                                    <a href="tel:+27639216255">063 921 6255</a>
+                                </p>
+                            </li>
+                            <li class="info-list__item">
+                                <span class="info-list__label">Email</span>
+                                <p class="info-list__value">
+                                    <a href="mailto:Specmechelectrical@gmail.com">Specmechelectrical@gmail.com</a>
+                                </p>
+                            </li>
+                            <li class="info-list__item">
+                                <span class="info-list__label">Hours</span>
+                                <p class="info-list__value">7am – 6pm, Monday to Sunday</p>
+                            </li>
+                            <li class="info-list__item">
+                                <span class="info-list__label">Shutdowns</span>
+                                <p class="info-list__value">24-hour availability</p>
+                            </li>
+                            <li class="info-list__item">
+                                <span class="info-list__label">Address</span>
+                                <p class="info-list__value">590 Greenstone Crest, Stoneridge Drive, Greenstone Hill, Johannesburg</p>
+                            </li>
+                        </ul>
+                        <div class="btn-group contact-actions">
+                            <a class="btn btn--primary" href="tel:+27840212477">Call now</a>
+                            <a class="btn btn--whatsapp" href="https://wa.me/27840212477?text=Hi%20Spectrum%2C%20I%27d%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer">
+                                <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                WhatsApp
+                            </a>
+                            <a class="btn btn--secondary" href="mailto:Specmechelectrical@gmail.com">Send email</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-panel">
+                        <h3 class="card__title">Request a callback</h3>
+                        <p class="card__text contact-form__intro">Leave your details and we'll get back to you during working hours.</p>
+                        <form class="contact-form form-stack" action="mailto:Specmechelectrical@gmail.com" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Full name</label>
+                                <input class="form-input" type="text" id="name" name="name" autocomplete="name" required />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone number</label>
+                                <input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel" required />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="service">Service needed</label>
+                                <select class="form-select" id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="electrical">Electrical Installations</option>
+                                    <option value="coc">Certificate of Compliance</option>
+                                    <option value="renovations">House Renovations</option>
+                                    <option value="floor">Tiling, Plumbing &amp; Painting</option>
+                                    <option value="solar">Solar Installations</option>
+                                    <option value="construction">Construction</option>
+                                    <option value="fencing">Electric Fencing &amp; Gates</option>
+                                    <option value="mechanical">Mechanical Repairs</option>
+                                    <option value="shutdowns">Shutdown Assistance</option>
+                                    <option value="rubble">Rubble Removal</option>
+                                    <option value="clearview">Clear View Fencing</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your project…"></textarea>
+                                <span class="form-hint">Include location and preferred contact time if possible.</span>
+                            </div>
+                            <button class="btn btn--primary btn--lg" type="submit">Send request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p class="site-footer__brand">Spectrum</p>
+            <p class="site-footer__text">Professional electrical, construction, and mechanical services across Johannesburg and surrounding areas.</p>
+            <nav class="site-footer__links" aria-label="Footer">
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <a href="tel:+27840212477">084 021 2477</a>
+                <a href="https://wa.me/27840212477?text=Hi%20Spectrum%2C%20I%27d%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </nav>
+            <p class="site-footer__copy">&copy; 2025 Spectrum. All rights reserved.</p>
         </div>
-    </section>
+    </footer>
 
-    <div class="service-details">
-        <h3 id="electrical">Electrical Installations (Domestic & Industrial)</h3>
-        <p>We provide expert electrical installations for homes and industrial facilities. From new wiring to panel upgrades, our certified electricians ensure your systems are safe, efficient, and compliant.</p>
+    <a class="whatsapp-fab" href="https://wa.me/27840212477?text=Hi%20Spectrum%2C%20I%27d%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg class="whatsapp-fab__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
 
-        <h3 id="coc">Certificate of Compliance (COCs)</h3>
-        <p>Need to sell or lease your property? We issue COCs for electrical work, ensuring your property meets the South African National Standards for safety and legal compliance.</p>
-
-        <h3 id="renovations">House Renovations</h3>
-        <p>Transform your living space with our renovation services. We handle everything from layout redesign to finishing touches with quality craftsmanship and attention to detail.</p>
-
-        <h3 id="floor">Floor Tiling, Plumbing, Painting & Paving</h3>
-        <p>We enhance the appearance and functionality of your home with expert tiling, plumbing repairs, painting services, and durable paving solutions for driveways and outdoor areas.</p>
-
-        <h3 id="solar">Solar Installations</h3>
-        <p>Power your home or business sustainably with our reliable solar panel installations. We offer full solutions including system design, installation, and maintenance.</p>
-
-        <h3 id="construction">Construction Services</h3>
-        <p>From foundations to roofing, we manage construction projects of all sizes. Our team delivers high-quality, cost-effective construction solutions on time and on budget.</p>
-
-        <h3 id="fencing">Electric Fencing & Automatic Gates</h3>
-        <p>Secure your property with state-of-the-art electric fencing and automated gate systems. We install, maintain, and repair all types of perimeter security solutions.</p>
-
-        <h3 id="mechanical">Mechanical Repairs (FMCG Industries)</h3>
-        <p>We specialize in mechanical repairs for the Fast-Moving Consumer Goods industry, ensuring your machinery stays operational and efficient with minimal downtime.</p>
-
-        <h3 id="shutdowns">Assistance with Shutdowns</h3>
-        <p>Our team supports planned industrial shutdowns, providing skilled labor and technical services to ensure your operations resume quickly and safely.</p>
-
-        <h3 id="rubble">Rubble Removal</h3>
-        <p>Keep your site clean and safe with our rubble and debris removal services. Perfect for post-renovation, construction, and yard clean-up needs.</p>
-
-        <h3 id="clearview">Clear View Fence Installations</h3>
-        <p>We install clear view fences for maximum visibility and security, ideal for residential, commercial, and industrial properties.</p>
-    </div>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-box">
-
-                <p><strong>Contact Person:</strong> Mr Forbes</p>
-                <p><strong>Phone:</strong> 084 021 2477 / 063 921 6255</p>
-                <p><strong>Email:</strong> Specmechelectrical@gmail.com</p>
-                <p><strong>Working hours:</strong> 7am - 6pm Monday to Sunday</p>
-                <p><strong>Shutdowns:</strong> 24 hours</p>
-                <p><strong>Address:</strong> 590 greenstone crest Stoneridge drive greenstone hill</p>
-        </div>
-    </section>
-</div>
-
-<footer>
-    <p>&copy;2025 Spectrum. All rights reserved.</p>
-</footer>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
