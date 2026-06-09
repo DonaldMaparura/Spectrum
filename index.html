@@ -73,7 +73,6 @@
             <nav id="site-nav" class="site-nav" aria-label="Primary">
                 <a class="site-nav__link" href="#services">Services</a>
                 <a class="site-nav__link" href="#gallery">Gallery</a>
-                <a class="site-nav__link" href="#about">About</a>
                 <a class="site-nav__link" href="#contact">Contact</a>
                 <div class="site-nav__cta">
                     <a class="btn btn--primary" href="tel:+27840212477">Call Now</a>
@@ -127,94 +126,149 @@
                 </header>
 
                 <div class="services-grid">
-                    <a class="service-card card card--interactive" href="#electrical">
-                        <div class="card__body">
-                            <div class="card__icon" aria-hidden="true">⚡</div>
-                            <h3 class="card__title">Electrical Installations</h3>
-                            <p class="card__text">Domestic and industrial wiring, panel upgrades, and compliant installations.</p>
-                            <span class="card__link">Learn more →</span>
+                    <details class="service-item card" id="electrical">
+                        <summary class="service-item__summary">
+                            <span class="card__icon" aria-hidden="true">⚡</span>
+                            <span class="service-item__heading">
+                                <h3 class="card__title">Electrical Installations                                </h3>
+                                <span class="card__text">Domestic and industrial wiring, panel upgrades, and compliant installations.</span>
+                            </span>
+                            <span class="service-item__toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="service-item__detail">
+                            <p>We provide expert electrical installations for homes and industrial facilities. From new wiring to panel upgrades, our certified electricians ensure your systems are safe, efficient, and compliant.</p>
                         </div>
-                    </a>
-                    <a class="service-card card card--interactive" href="#coc">
-                        <div class="card__body">
-                            <div class="card__icon" aria-hidden="true">✓</div>
-                            <h3 class="card__title">Certificate of Compliance</h3>
-                            <p class="card__text">COCs for property sales and leases, meeting South African safety standards.</p>
-                            <span class="card__link">Learn more →</span>
+                    </details>
+                    <details class="service-item card" id="coc">
+                        <summary class="service-item__summary">
+                            <span class="card__icon" aria-hidden="true">✓</span>
+                            <span class="service-item__heading">
+                                <h3 class="card__title">Certificate of Compliance                                </h3>
+                                <span class="card__text">COCs for property sales and leases, meeting South African safety standards.</span>
+                            </span>
+                            <span class="service-item__toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="service-item__detail">
+                            <p>Need to sell or lease your property? We issue COCs for electrical work, ensuring your property meets the South African National Standards for safety and legal compliance.</p>
                         </div>
-                    </a>
-                    <a class="service-card card card--interactive" href="#renovations">
-                        <div class="card__body">
-                            <div class="card__icon" aria-hidden="true">🏠</div>
-                            <h3 class="card__title">House Renovations</h3>
-                            <p class="card__text">Layout redesign through to finishing touches with quality craftsmanship.</p>
-                            <span class="card__link">Learn more →</span>
+                    </details>
+                    <details class="service-item card" id="renovations">
+                        <summary class="service-item__summary">
+                            <span class="card__icon" aria-hidden="true">🏠</span>
+                            <span class="service-item__heading">
+                                <h3 class="card__title">House Renovations                                </h3>
+                                <span class="card__text">Layout redesign through to finishing touches with quality craftsmanship.</span>
+                            </span>
+                            <span class="service-item__toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="service-item__detail">
+                            <p>Transform your living space with our renovation services. We handle everything from layout redesign to finishing touches with quality craftsmanship and attention to detail.</p>
                         </div>
-                    </a>
-                    <a class="service-card card card--interactive" href="#floor">
-                        <div class="card__body">
-                            <div class="card__icon" aria-hidden="true">🔧</div>
-                            <h3 class="card__title">Tiling, Plumbing &amp; Painting</h3>
-                            <p class="card__text">Tiling, plumbing repairs, painting, and durable paving solutions.</p>
-                            <span class="card__link">Learn more →</span>
+                    </details>
+                    <details class="service-item card" id="floor">
+                        <summary class="service-item__summary">
+                            <span class="card__icon" aria-hidden="true">🔧</span>
+                            <span class="service-item__heading">
+                                <h3 class="card__title">Tiling, Plumbing &amp; Painting                                </h3>
+                                <span class="card__text">Tiling, plumbing repairs, painting, and durable paving solutions.</span>
+                            </span>
+                            <span class="service-item__toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="service-item__detail">
+                            <p>We enhance the appearance and functionality of your home with expert tiling, plumbing repairs, painting services, and durable paving solutions for driveways and outdoor areas.</p>
                         </div>
-                    </a>
-                    <a class="service-card card card--interactive" href="#solar">
-                        <div class="card__body">
-                            <div class="card__icon" aria-hidden="true">☀</div>
-                            <h3 class="card__title">Solar Installations</h3>
-                            <p class="card__text">System design, installation, and maintenance for homes and businesses.</p>
-                            <span class="card__link">Learn more →</span>
+                    </details>
+                    <details class="service-item card" id="solar">
+                        <summary class="service-item__summary">
+                            <span class="card__icon" aria-hidden="true">☀</span>
+                            <span class="service-item__heading">
+                                <h3 class="card__title">Solar Installations                                </h3>
+                                <span class="card__text">System design, installation, and maintenance for homes and businesses.</span>
+                            </span>
+                            <span class="service-item__toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="service-item__detail">
+                            <p>Power your home or business sustainably with our reliable solar panel installations. We offer full solutions including system design, installation, and maintenance.</p>
                         </div>
-                    </a>
-                    <a class="service-card card card--interactive" href="#construction">
-                        <div class="card__body">
-                            <div class="card__icon" aria-hidden="true">🏗</div>
-                            <h3 class="card__title">Construction</h3>
-                            <p class="card__text">Foundations to roofing — projects delivered on time and on budget.</p>
-                            <span class="card__link">Learn more →</span>
+                    </details>
+                    <details class="service-item card" id="construction">
+                        <summary class="service-item__summary">
+                            <span class="card__icon" aria-hidden="true">🏗</span>
+                            <span class="service-item__heading">
+                                <h3 class="card__title">Construction                                </h3>
+                                <span class="card__text">Foundations to roofing — projects delivered on time and on budget.</span>
+                            </span>
+                            <span class="service-item__toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="service-item__detail">
+                            <p>From foundations to roofing, we manage construction projects of all sizes. Our team delivers high-quality, cost-effective construction solutions on time and on budget.</p>
                         </div>
-                    </a>
-                    <a class="service-card card card--interactive" href="#fencing">
-                        <div class="card__body">
-                            <div class="card__icon" aria-hidden="true">🔒</div>
-                            <h3 class="card__title">Electric Fencing &amp; Gates</h3>
-                            <p class="card__text">Installation, maintenance, and repair of perimeter security systems.</p>
-                            <span class="card__link">Learn more →</span>
+                    </details>
+                    <details class="service-item card" id="fencing">
+                        <summary class="service-item__summary">
+                            <span class="card__icon" aria-hidden="true">🔒</span>
+                            <span class="service-item__heading">
+                                <h3 class="card__title">Electric Fencing &amp; Gates                                </h3>
+                                <span class="card__text">Installation, maintenance, and repair of perimeter security systems.</span>
+                            </span>
+                            <span class="service-item__toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="service-item__detail">
+                            <p>Secure your property with state-of-the-art electric fencing and automated gate systems. We install, maintain, and repair all types of perimeter security solutions.</p>
                         </div>
-                    </a>
-                    <a class="service-card card card--interactive" href="#mechanical">
-                        <div class="card__body">
-                            <div class="card__icon" aria-hidden="true">⚙</div>
-                            <h3 class="card__title">Mechanical Repairs</h3>
-                            <p class="card__text">FMCG industry machinery repairs with minimal downtime.</p>
-                            <span class="card__link">Learn more →</span>
+                    </details>
+                    <details class="service-item card" id="mechanical">
+                        <summary class="service-item__summary">
+                            <span class="card__icon" aria-hidden="true">⚙</span>
+                            <span class="service-item__heading">
+                                <h3 class="card__title">Mechanical Repairs                                </h3>
+                                <span class="card__text">FMCG industry machinery repairs with minimal downtime.</span>
+                            </span>
+                            <span class="service-item__toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="service-item__detail">
+                            <p>We specialize in mechanical repairs for the Fast-Moving Consumer Goods industry, ensuring your machinery stays operational and efficient with minimal downtime.</p>
                         </div>
-                    </a>
-                    <a class="service-card card card--interactive" href="#shutdowns">
-                        <div class="card__body">
-                            <div class="card__icon" aria-hidden="true">🕐</div>
-                            <h3 class="card__title">Shutdown Assistance</h3>
-                            <p class="card__text">Skilled labour and technical support for planned industrial shutdowns.</p>
-                            <span class="card__link">Learn more →</span>
+                    </details>
+                    <details class="service-item card" id="shutdowns">
+                        <summary class="service-item__summary">
+                            <span class="card__icon" aria-hidden="true">🕐</span>
+                            <span class="service-item__heading">
+                                <h3 class="card__title">Shutdown Assistance                                </h3>
+                                <span class="card__text">Skilled labour and technical support for planned industrial shutdowns.</span>
+                            </span>
+                            <span class="service-item__toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="service-item__detail">
+                            <p>Our team supports planned industrial shutdowns, providing skilled labor and technical services to ensure your operations resume quickly and safely.</p>
                         </div>
-                    </a>
-                    <a class="service-card card card--interactive" href="#rubble">
-                        <div class="card__body">
-                            <div class="card__icon" aria-hidden="true">🚛</div>
-                            <h3 class="card__title">Rubble Removal</h3>
-                            <p class="card__text">Post-renovation and construction debris removal to keep sites safe.</p>
-                            <span class="card__link">Learn more →</span>
+                    </details>
+                    <details class="service-item card" id="rubble">
+                        <summary class="service-item__summary">
+                            <span class="card__icon" aria-hidden="true">🚛</span>
+                            <span class="service-item__heading">
+                                <h3 class="card__title">Rubble Removal                                </h3>
+                                <span class="card__text">Post-renovation and construction debris removal to keep sites safe.</span>
+                            </span>
+                            <span class="service-item__toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="service-item__detail">
+                            <p>Keep your site clean and safe with our rubble and debris removal services. Perfect for post-renovation, construction, and yard clean-up needs.</p>
                         </div>
-                    </a>
-                    <a class="service-card card card--interactive" href="#clearview">
-                        <div class="card__body">
-                            <div class="card__icon" aria-hidden="true">🛡</div>
-                            <h3 class="card__title">Clear View Fencing</h3>
-                            <p class="card__text">Maximum visibility and security for residential and commercial properties.</p>
-                            <span class="card__link">Learn more →</span>
+                    </details>
+                    <details class="service-item card" id="clearview">
+                        <summary class="service-item__summary">
+                            <span class="card__icon" aria-hidden="true">🛡</span>
+                            <span class="service-item__heading">
+                                <h3 class="card__title">Clear View Fencing                                </h3>
+                                <span class="card__text">Maximum visibility and security for residential and commercial properties.</span>
+                            </span>
+                            <span class="service-item__toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="service-item__detail">
+                            <p>We install clear view fences for maximum visibility and security, ideal for residential, commercial, and industrial properties.</p>
                         </div>
-                    </a>
+                    </details>
                 </div>
             </div>
         </section>
@@ -227,7 +281,29 @@
                     <p class="section-subtitle">Recent projects across electrical, construction, fencing, and flooring work.</p>
                 </header>
 
-                <div class="gallery-grid">
+                <div class="gallery-wrapper" id="gallery-wrapper">
+                    <button type="button" class="gallery-stack" id="gallery-stack" aria-expanded="false" aria-controls="gallery-panel">
+                        <span class="gallery-stack__deck" aria-hidden="true">
+                            <span class="gallery-stack__layer gallery-stack__layer--3">
+                                <img src="images/IMG-20250604-WA0049.webp" alt="" width="576" height="1280" decoding="async" />
+                            </span>
+                            <span class="gallery-stack__layer gallery-stack__layer--2">
+                                <img src="images/IMG-20250604-WA0048.webp" alt="" width="576" height="1280" decoding="async" />
+                            </span>
+                            <span class="gallery-stack__layer gallery-stack__layer--1">
+                                <img src="images/IMG-20250604-WA0046.webp" alt="" width="576" height="1280" decoding="async" />
+                            </span>
+                            <span class="gallery-stack__count">+6 more</span>
+                        </span>
+                        <span class="gallery-stack__label">View all 9 project photos</span>
+                    </button>
+
+                    <div class="gallery-panel" id="gallery-panel" hidden>
+                        <div class="gallery-panel__toolbar">
+                            <p class="gallery-panel__title">All project photos</p>
+                            <button type="button" class="btn btn--secondary btn--sm" id="gallery-collapse">Show less</button>
+                        </div>
+                        <div class="gallery-grid">
                     <figure class="gallery-item">
                         <picture>
                             <source srcset="images/IMG-20250604-WA0046.webp" type="image/webp" />
@@ -249,7 +325,7 @@
                     <figure class="gallery-item">
                         <picture>
                             <source srcset="images/IMG-20250604-WA0050.webp" type="image/webp" />
-                            <img src="IMG-20250604-WA0050.jpg" alt="Floor tiling work in a residential space" width="576" height="1280" loading="lazy" decoding="async" />
+                            <img src="IMG-20250604-WA0050.jpg" alt="Spectrum team at a transformer sub-station" width="576" height="1280" loading="lazy" decoding="async" />
                         </picture>
                     </figure>
                     <figure class="gallery-item">
@@ -282,63 +358,8 @@
                             <img src="IMG-20250604-WA0055.jpg" alt="Completed tiling project in a living area" width="576" height="1280" loading="lazy" decoding="async" />
                         </picture>
                     </figure>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="about" aria-labelledby="about-title">
-            <div class="container">
-                <header class="section__header">
-                    <p class="eyebrow">Service details</p>
-                    <h2 class="section-title" id="about-title">What to expect from Spectrum</h2>
-                    <p class="section-subtitle">Every service is delivered with safety, compliance, and clear communication from quote to completion.</p>
-                </header>
-
-                <div class="details-grid">
-                    <article class="detail-card" id="electrical">
-                        <h3 class="detail-card__title">Electrical Installations (Domestic &amp; Industrial)</h3>
-                        <p class="detail-card__text">We provide expert electrical installations for homes and industrial facilities. From new wiring to panel upgrades, our certified electricians ensure your systems are safe, efficient, and compliant.</p>
-                    </article>
-                    <article class="detail-card" id="coc">
-                        <h3 class="detail-card__title">Certificate of Compliance (COCs)</h3>
-                        <p class="detail-card__text">Need to sell or lease your property? We issue COCs for electrical work, ensuring your property meets the South African National Standards for safety and legal compliance.</p>
-                    </article>
-                    <article class="detail-card" id="renovations">
-                        <h3 class="detail-card__title">House Renovations</h3>
-                        <p class="detail-card__text">Transform your living space with our renovation services. We handle everything from layout redesign to finishing touches with quality craftsmanship and attention to detail.</p>
-                    </article>
-                    <article class="detail-card" id="floor">
-                        <h3 class="detail-card__title">Floor Tiling, Plumbing, Painting &amp; Paving</h3>
-                        <p class="detail-card__text">We enhance the appearance and functionality of your home with expert tiling, plumbing repairs, painting services, and durable paving solutions for driveways and outdoor areas.</p>
-                    </article>
-                    <article class="detail-card" id="solar">
-                        <h3 class="detail-card__title">Solar Installations</h3>
-                        <p class="detail-card__text">Power your home or business sustainably with our reliable solar panel installations. We offer full solutions including system design, installation, and maintenance.</p>
-                    </article>
-                    <article class="detail-card" id="construction">
-                        <h3 class="detail-card__title">Construction Services</h3>
-                        <p class="detail-card__text">From foundations to roofing, we manage construction projects of all sizes. Our team delivers high-quality, cost-effective construction solutions on time and on budget.</p>
-                    </article>
-                    <article class="detail-card" id="fencing">
-                        <h3 class="detail-card__title">Electric Fencing &amp; Automatic Gates</h3>
-                        <p class="detail-card__text">Secure your property with state-of-the-art electric fencing and automated gate systems. We install, maintain, and repair all types of perimeter security solutions.</p>
-                    </article>
-                    <article class="detail-card" id="mechanical">
-                        <h3 class="detail-card__title">Mechanical Repairs (FMCG Industries)</h3>
-                        <p class="detail-card__text">We specialize in mechanical repairs for the Fast-Moving Consumer Goods industry, ensuring your machinery stays operational and efficient with minimal downtime.</p>
-                    </article>
-                    <article class="detail-card" id="shutdowns">
-                        <h3 class="detail-card__title">Assistance with Shutdowns</h3>
-                        <p class="detail-card__text">Our team supports planned industrial shutdowns, providing skilled labor and technical services to ensure your operations resume quickly and safely.</p>
-                    </article>
-                    <article class="detail-card" id="rubble">
-                        <h3 class="detail-card__title">Rubble Removal</h3>
-                        <p class="detail-card__text">Keep your site clean and safe with our rubble and debris removal services. Perfect for post-renovation, construction, and yard clean-up needs.</p>
-                    </article>
-                    <article class="detail-card" id="clearview">
-                        <h3 class="detail-card__title">Clear View Fence Installations</h3>
-                        <p class="detail-card__text">We install clear view fences for maximum visibility and security, ideal for residential, commercial, and industrial properties.</p>
-                    </article>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -432,6 +453,26 @@
                             <button class="btn btn--primary btn--lg" type="submit">Send request</button>
                         </form>
                     </div>
+                </div>
+
+                <div class="map-section">
+                    <h3 class="card__title">Find us</h3>
+                    <p class="card__text map-section__address">590 Greenstone Crest, Stoneridge Drive, Greenstone Hill, Johannesburg</p>
+                    <div class="map-embed">
+                        <iframe
+                            title="Map showing Spectrum location in Greenstone Hill, Johannesburg"
+                            src="https://www.google.com/maps?q=590+Greenstone+Crest,+Stoneridge+Drive,+Greenstone+Hill,+Johannesburg,+South+Africa&amp;output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <a
+                        class="map-link"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=590+Greenstone+Crest+Stoneridge+Drive+Greenstone+Hill+Johannesburg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Open in Google Maps</a>
                 </div>
             </div>
         </section>
