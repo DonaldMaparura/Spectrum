@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "optimize-images": "node scripts/optimize-images.mjs"
+    "optimize-images": "node scripts/optimize-images.mjs",
+    "build-pages": "node scripts/build-pages.mjs",
+    "download-images": "node scripts/download-stock-images.mjs"
   },
   "repository": {
     "type": "git",
